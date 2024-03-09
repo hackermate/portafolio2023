@@ -694,6 +694,46 @@ section {
   font-size: 6.3rem;
 }
 
+.extra {
+  display: none;
+}
+
+p {
+  display: inline;
+}
+
+input[type=checkbox] {
+  height: 2em;
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+label {
+  position: relative;
+  padding: 1em;
+  background-color: #000;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+label::before {
+  content: "Read More";
+}
+
+input[type=checkbox]:checked ~ label::before {
+  content: "Read Less";
+}
+
+.dots:has(~ input[type=checkbox]:checked) {
+  display: none;
+}
+
+.extra:has(~ input[type=checkbox]:checked) {
+  display: inline;
+}
+
 .about-container .left-about p {
   padding-left: 0;
 }
