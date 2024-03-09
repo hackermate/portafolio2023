@@ -694,6 +694,7 @@ section {
   font-size: 6.3rem;
 }
 
+/* Manejo de texto READ MORE */
 .extra {
   display: none;
 }
@@ -734,6 +735,7 @@ input[type=checkbox]:checked ~ label::before {
   display: inline;
 }
 
+/*-----*/
 .about-container .left-about p {
   padding-left: 0;
 }

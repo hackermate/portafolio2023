@@ -668,6 +668,7 @@ section {
     }
 }
 
+/* Manejo de texto READ MORE */
 .extra {
     display: none;
 }
@@ -703,7 +704,7 @@ input[type="checkbox"]:checked ~ label::before{
 .extra:has(~ input[type="checkbox"]:checked){
     display: inline;
 }
-
+/*-----*/
 
 
 @import './media';
