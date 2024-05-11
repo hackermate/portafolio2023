@@ -624,29 +624,29 @@ section {
 
 /*Independed components*/
 .btn-send {
-  background-color: var(--color-primary);
-  border: 1px solid var(--color-secondary);
   border-radius: 30px;
-  color: inherit;
+  background: var(--color-primary);
+  color: white;
+  border-radius: 30px;
   text-align: center;
-  text-decoration: none;
   font-weight: 600;
   padding: 12px 32px;
   font-size: 1.1rem;
   display: flex;
   align-self: flex-start;
+  transition: width 2s;
 }
-.btn-send::before {
-  position: absolute;
-  top: 0;
-  right: 0;
+.btn-send .btn-send::before {
+  content: "";
+  background-color: var(--color-secondary);
   transform: translateX(100%);
   transition: all 0.4s ease-out;
   z-index: -1;
 }
-.btn-send:hover {
-  box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset, rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
-  transform: scale(1.05);
+.btn-send .btn-send:hover {
+  width: 300px;
+  transform: translateX(0%);
+  transition: all 0.4s ease-out;
 }
 
 .btn-con {
