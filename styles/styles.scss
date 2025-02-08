@@ -713,8 +713,11 @@ input[type="checkbox"]{
 }
 label {
     position: relative;
-    padding: 1em;
-    background-color: #000;
+    padding: 6px;
+    border-radius: 20px;
+    border:2px solid var(--color-secondary);
+    background-color: var(--color-primary);
+    font-size: 12px;
     color: #FFFFFF;
     cursor: pointer;
 }
