@@ -7,8 +7,8 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #27AE60;
-  --color-white: #FFFFFF;
+  --color-secondary: #27ae60;
+  --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -18,12 +18,12 @@
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 .light-mode {
-  --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
+  --color-primary: #ffffff;
+  --color-secondary: #f56692;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -598,7 +598,8 @@ section {
 .contact-content-con .right-contact .input-control {
   margin: 1.5rem 0;
 }
-.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+.contact-content-con .right-contact .input-control input,
+.contact-content-con .right-contact .input-control textarea {
   border-radius: 30px;
   font-weight: inherit;
   font-size: inherit;
@@ -624,7 +625,6 @@ section {
 
 /*Independed components*/
 .btn-send {
-  border-radius: 30px;
   background: var(--color-primary);
   color: white;
   border-radius: 30px;
@@ -634,6 +634,7 @@ section {
   font-size: 1.1rem;
   display: flex;
   align-self: flex-start;
+  border: 2px solid var(--color-secondary);
   transition: width 2s;
 }
 .btn-send .btn-send::before {
@@ -643,10 +644,9 @@ section {
   transition: all 0.4s ease-out;
   z-index: -1;
 }
-.btn-send .btn-send:hover {
-  width: 300px;
-  transform: translateX(0%);
-  transition: all 0.4s ease-out;
+
+.btn-send:hover {
+  background-color: var(--color-secondary);
 }
 
 .btn-con {
@@ -744,7 +744,7 @@ label {
   border: 2px solid var(--color-secondary);
   background-color: var(--color-primary);
   font-size: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 
