@@ -755,6 +755,10 @@ label::before {
     content: "Read More";
 }
 
+label:hover {
+    background-color: var(--color-secondary);
+}
+
 input[type="checkbox"]:checked ~ label::before {
     content: "Read Less";
 }
