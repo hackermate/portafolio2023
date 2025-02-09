@@ -769,6 +769,10 @@ input[type=checkbox]:checked ~ label::before {
 }
 
 /*-----*/
+a {
+  color: var(--color-secondary);
+}
+
 .about-container .left-about p {
   padding-left: 0;
 }

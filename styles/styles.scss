@@ -772,4 +772,8 @@ input[type="checkbox"]:checked ~ label::before {
 }
 /*-----*/
 
+a{
+    color:var(--color-secondary);
+}
+
 @import "./media";
