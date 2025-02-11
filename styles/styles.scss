@@ -645,6 +645,15 @@ section {
     overflow: hidden;
     border: 1px solid var(--color-secondary);
     
+     &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: all 0.4s ease-out;
+        z-index: -1;
+    }
     &:hover {
         transition: all 0.4s ease-out;
         &::before {
