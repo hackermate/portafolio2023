@@ -646,7 +646,7 @@ section {
     border: 1px solid var(--color-secondary);
     transition: background-color 0.4s ease-out;
 
-     :before {
+     ::before {
         content: "";
         position: absolute;
         top: 0;
@@ -660,7 +660,7 @@ section {
         transition: transform 0.4s ease-out;
     }
 
-    :hover {
+    ::hover {
         color: var(--color-white);
         :before{
             transform: scaleX(1);

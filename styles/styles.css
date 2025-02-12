@@ -639,7 +639,7 @@ section {
   border: 1px solid var(--color-secondary);
   transition: background-color 0.4s ease-out;
 }
-.btn-send :before {
+.btn-send ::before {
   content: "";
   position: absolute;
   top: 0;
@@ -652,10 +652,10 @@ section {
   transform-origin: left;
   transition: transform 0.4s ease-out;
 }
-.btn-send :hover {
+.btn-send ::hover {
   color: var(--color-white);
 }
-.btn-send :hover :before {
+.btn-send ::hover :before {
   transform: scaleX(1);
 }
 
